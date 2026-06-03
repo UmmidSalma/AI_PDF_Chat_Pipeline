@@ -1,80 +1,68 @@
-# PDF Chat & Pipeline Project
+# ai-pdf-chat-pipeline
 
-## Project Overview
+An AI-powered pipeline to chat with your PDFs, right in the browser.
 
-This repository contains a minimal project for interacting with PDF content and a processing pipeline. It includes a simple HTML-based PDF chat interface and a Jupyter notebook that demonstrates a data pipeline with backend-related steps.
+---
 
-## Files
+## Overview
 
-- pdf_chat.html — a frontend HTML page for interacting with PDF content.
-- pipeline_with_backend.ipynb — a Jupyter notebook showing the pipeline and backend integration.
+This project combines a browser-based PDF chat interface with a
+Jupyter notebook backend pipeline — built for exploring how AI can
+make PDF content conversational and queryable without any server setup.
 
-## Description
+---
 
-This project is a small demo showing how a PDF-based chat or processing pipeline can be organized:
+## Project Structure
 
-- `pdf_chat.html` provides a lightweight UI you can open in any modern browser to view or interact with PDF-related features (e.g., local file preview, basic chat layout).
-- `pipeline_with_backend.ipynb` contains an interactive notebook demonstrating data processing steps and how a backend component might be integrated. The notebook is intended for exploration and development rather than production deployment.
+pdf_chat.html            — Frontend UI for PDF interaction (open in browser)
+pipeline_with_backend.ipynb  — Jupyter notebook with AI pipeline + backend logic
 
-## Requirements
+---
 
-- Python 3.8+ (for the notebook)
-- Jupyter Notebook or JupyterLab to open the `.ipynb` file
-- A modern web browser (Chrome, Edge, Firefox) to open `pdf_chat.html`
+## Tech Stack
 
-Optional: If the notebook relies on specific Python packages, install them into a virtual environment (see below). If there is a `requirements.txt` file, use that.
+- HTML / CSS / JS  — frontend interface
+- Python 3.8+      — notebook runtime
+- Jupyter          — interactive pipeline environment
+- AI/ML backend    — PDF processing and chat logic
 
-## Quick Start — Open the HTML
+---
 
-1. From your file explorer, double-click `pdf_chat.html` or right-click and choose "Open with" -> your browser.
-2. Alternatively, start a simple HTTP server and open the page in the browser (useful if the page fetches local resources):
+## Getting Started
 
-For PowerShell (Windows):
+### 1. Open the HTML Interface
 
-```powershell
-# from the project root
-python -m http.server 8000
-# then open http://localhost:8000/pdf_chat.html
-```
+Option A — direct open:
+  Double-click pdf_chat.html in your file explorer.
 
-## Quick Start — Open the Notebook
+Option B — local server (recommended):
+  python -m http.server 8000
+  Then visit: http://localhost:8000/pdf_chat.html
 
-1. Create and activate a virtual environment (optional but recommended):
+### 2. Run the Notebook
 
-Windows PowerShell:
-
-```powershell
+# create virtual environment
 python -m venv .venv
-.\.venv\Scripts\Activate
-```
+.\.venv\Scripts\Activate      # Windows PowerShell
+source .venv/bin/activate     # macOS / Linux
 
-2. Install Jupyter (or any required dependencies):
-
-```powershell
+# install dependencies
 pip install jupyter
-# or, if you have requirements.txt
-pip install -r requirements.txt
-```
+pip install -r requirements.txt  # if available
 
-3. Start Jupyter and open the notebook in your browser:
-
-```powershell
+# launch
 jupyter notebook
-# then open pipeline_with_backend.ipynb from the Jupyter interface
-```
 
-## Notes & Recommendations
+Open pipeline_with_backend.ipynb from the Jupyter interface.
 
-- Inspect `pipeline_with_backend.ipynb` before running cells to see any cells that require API keys, credentials, or specific local files. Remove or replace secrets before sharing.
-- If a backend server is needed (the notebook mentions a backend), check the notebook cells or repo docs for server start commands — commonly `python app.py` or `uvicorn main:app --reload` for FastAPI projects.
-- If you want, I can scan the notebook to generate a `requirements.txt` and add more precise run instructions.
+---
 
-## Contact / Next Steps
+## Notes
 
-If you'd like, I can:
+- Check notebook cells for API keys or credentials before sharing.
+- If a backend server is required, look for app.py or a startup cell.
+- A requirements.txt can be generated from the notebook on request.
 
-- Generate a `requirements.txt` by scanning the notebook
-- Add a short CONTRIBUTING section or license
-- Create a simple backend starter file if the notebook expects one
+---
 
-Enjoy — open `pdf_chat.html` in your browser or run `pipeline_with_backend.ipynb` in Jupyter to get started.
+KLE Technological University — B.E. Final Year Project
